@@ -1,0 +1,181 @@
+body {
+    background: linear-gradient(to right, aquamarine, white);
+    height: 100vh;
+
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    width: 50vh;
+    height: 80vh;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.10) );
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;    
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 33px 0 rgba(255, 255, 255, 0.37) ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#userSignIn {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#userSignUp {
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#admSignIn {
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#admSignUp {
+    width: 100%;
+    height: 100%;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    /*border: 2px solid red;*/
+}
+
+p {
+    /*border: 2px solid red;*/
+    margin: 0 0 0 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+.changeUserSignInAccountAdmSignIn {
+    margin: 0;
+    background-color: aquamarine;
+    margin: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+.changeUserSignUpAccountAdmSignUp {
+    margin: 0;
+    background-color: aquamarine;
+    margin: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+}
+
+.changeAdmSignInAccountUserSignIn {
+    margin: 0;
+    color: red;
+    background-color: transparent;
+    margin: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.changeAdmSignUpAccountUserSignUp {
+    margin: 0;
+    color: red;
+    background-color: transparent;
+    margin: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    /*border: 2px solid red;*/
+    position: relative;
+    width: 100%;
+    height: 65vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+label {
+    /*border: 2px solid red;*/
+    width: 80%;
+    height: 5vh;
+    padding-left: 20px;
+    
+    display: flex;
+    align-items: end;
+    margin-bottom: 2px;
+}
+
+input {
+    border: transparent;
+    border-radius: 10px;
+    width: 80%;
+    height: 5vh ;
+}
+
+.changeButton {
+    /*border: 2px solid red;*/
+    border: transparent;
+    background: transparent;   
+
+    margin: 5% 0 5% 50%;
+}
+
+.changeButton:hover {
+    color: blue;
+}
+
+#confirmButton {
+    position: relative;
+    background-color: aquamarine;
+    opacity: 50%;
+    border: transparent;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px gray;
+
+    width: 80%;
+    height: 6vh;
+}
+
+#confirmButton:hover {
+    opacity: 100%;
+    transition: 0.1s ease-out;
+}
+
