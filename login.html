@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login/login.css">
+    <title>Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="userSignIn" id="userSignIn">
+            <h1>Sign In</h1>
+            <p>Change For <span style=" color: blue; margin: 5px;">ADM</span> Account:
+                <button type="button" class="changeUserSignInAccountAdmSignIn" id="changeUserSignInAccountAdmSignIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                    </svg>
+                </button>
+            </p>
+            <form action="login/login.php" method="post">
+                <input type="hidden" name="form_type" value="userSignIn"> 
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+                <button type="button"  class="changeButton" id="userInForUpButton">Create Account</button>
+                <button type="submit" class="confirmButton" id="confirmButton">Login</button>
+            </form>   
+        </div>
+        <div class="userSignUp" id="userSignUp">
+            <h1>Sign Up</h1>
+            <p>Change For <span style=" color: blue; margin: 5px;">ADM</span> Account:
+                <button type="button" class="changeUserSignUpAccountAdmSignUp" id="changeUserSignUpAccountAdmSignUp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                    </svg>
+                </button>
+            </p>
+            <form action="login/login.php" method="post">
+                <input type="hidden" name="form_type" value="userSignUp">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+                <button type="button" class="changeButton" id="userUpForInButton">Login Your Account</button>
+                <button type="submit" class="confirmButton" id="confirmButton">Login</button>
+            </form>
+        </div>
+        <div class="admSignIn" id="admSignIn">
+            <h1>Sign In<span style="color: blue; font-size: 10px; margin: 5px;">ADM</span></h1>
+            <p>Change For <span style=" color: red; margin: 5px;">User</span> Account:
+                <button type="button" class="changeAdmSignInAccountUserSignIn" id="changeAdmSignInAccountUserSignIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                    </svg>
+                </button>
+            </p>
+            <form action="login/login.php" method="post">
+                <input type="hidden" name="form_type" value="admSignIn">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+                <button type="button"  class="changeButton" id="admInForUpButton">Create Account</button>
+                <button type="submit" class="confirmButton" id="confirmButton">Login</button>
+            
+            </form>
+            
+        </div>
+        <div class="admSignUp" id="admSignUp">
+            <h1>Sign Up<span style="color: blue; font-size: 10px; margin: 5px;">ADM</span></h1>
+            <p>Change For <span style=" color: red; margin: 5px;">User</span> Account:
+                <button type="button" class="changeAdmSignUpAccountUserSignUp" id="changeAdmSignUpAccountUserSignUp">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-left-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"/>
+                    </svg>
+                </button>
+            </p>
+            <form action="login/login.php" method="post">
+                <input type="hidden" name="form_type" value="admSignUp">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password">
+                <button type="button"  class="changeButton" id="admUpForInButton">Login Your Account</button>
+                <button type="submit" class="confirmButton" id="confirmButton">Login</button>
+            </form>
+            
+        </div>
+    </div>
+
+    <script src="login/login.js"></script>
+</body>
+</html>
